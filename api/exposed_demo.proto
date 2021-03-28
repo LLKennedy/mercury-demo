@@ -1,0 +1,8 @@
+syntax = "proto3";
+package service;
+
+option go_package = "github.com/LLKennedy/mercury-demo/api/demopb";
+
+import "node_modules/@llkennedy/protoc-gen-tsjson/tsjson.proto";
+option (tsjson.npm_package) = "@llkdemo/mercury-demo";
+option (tsjson.import_path) = "exposed_demo";

@@ -7,7 +7,7 @@ go install github.com/LLKennedy/protoc-gen-tsjson@v0.5.0
 $Directory = "./api/*"
 $IncludeRule = "*.proto"
 $ExcludeRUle = [Regex]'.*google.*|.*audit/.*|.*node_modules.*'
-$GoPBPath = "./demopb"
+$GoPBPath = "./api/demopb"
 $TSPBPath = "./api/src"
 $ProtoFiles = Get-ChildItem -path $Directory -Include $IncludeRule | Where-Object FullName -NotMatch $ExcludeRUle
 foreach ($file in $ProtoFiles) {
